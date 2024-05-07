@@ -5,7 +5,7 @@ class Car(models.Model):
     name=models.CharField(max_length=100)
     color=models.CharField(max_length=100)
     status=models.CharField(max_length=100,default='available')
-    vehicleno=models.IntegerField(max_length=10)
+    transmission=models.CharField(max_length=20)
 
 
 class Lease(models.Model):
